@@ -1,0 +1,16 @@
+filelist.bat
+names.txt
+blazing_bone.webp
+cleansing_conch.webp
+elegy_tacet_core.webp
+gold_dissolving_feather.webp
+group_abomination_tacet_core.webp
+hidden_thunder_tacet_core.webp
+platinum_core.webp
+rage_tacet_core.webp
+roaring_rock_fist.webp
+sound_keeping_tacet_core.webp
+strife_tacet_core.webp
+thundering_tacet_core.webp
+topological_confinement.webp
+unfading_glory.webp
