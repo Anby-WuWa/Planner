@@ -15,6 +15,7 @@ const itemMetadata = {
 "expW4": { group: "ac", category: "general", rank: 4, image: "ww_icons/general/Premium_Energy_Core.png"},
 
 /*Enemy Drops*/
+"TBC1": { group: "b", category: "enemy", rank: 0, image: "ww_icons/general/tbc1.webp"},
 "LF Whisperin Core": { group: "ba", category: "enemy", rank: 1, image: "ww_icons/skill_mat/lf_whisperin_core.webp"},
 "MF Whisperin Core": { group: "ba", category: "enemy", rank: 2, image: "ww_icons/skill_mat/mf_whisperin_core.webp"},
 "HF Whisperin Core": { group: "ba", category: "enemy", rank: 3, image: "ww_icons/skill_mat/hf_whisperin_core.webp"},
@@ -39,6 +40,14 @@ const itemMetadata = {
 "Mask of Erosion": { group: "bf", category: "enemy", rank: 2, image: "ww_icons/skill_mat/mask_of_erosion.webp"},
 "Mask of Distortion": { group: "bf", category: "enemy", rank: 3, image: "ww_icons/skill_mat/mask_of_distortion.webp"},
 "Mask of Insanity": { group: "bf", category: "enemy", rank: 4, image: "ww_icons/skill_mat/mask_of_insanity.webp"},
+"LF Exoswarm Core": { group: "bg", category: "enemy", rank: 1, image: "ww_icons/skill_mat/tbc1.webp"},
+"MF Exoswarm Core": { group: "bg", category: "enemy", rank: 2, image: "ww_icons/skill_mat/tbc1.webp"},
+"HF Exoswarm Core": { group: "bg", category: "enemy", rank: 3, image: "ww_icons/skill_mat/tbc1.webp"},
+"FF Exoswarm Core": { group: "bg", category: "enemy", rank: 4, image: "ww_icons/skill_mat/tbc1.webp"},
+"LF Mech Core": { group: "bh", category: "enemy", rank: 1, image: "ww_icons/skill_mat/tbc1.webp"},
+"MF Mech Core": { group: "bh", category: "enemy", rank: 2, image: "ww_icons/skill_mat/tbc1.webp"},
+"HF Mech Core": { group: "bh", category: "enemy", rank: 3, image: "ww_icons/skill_mat/tbc1.webp"},
+"FF Mech Core": { group: "bh", category: "enemy", rank: 4, image: "ww_icons/skill_mat/tbc1.webp"},
 
 /*Weekly Material*/
 "Monument Bell": { group: "ca", category: "weekly", rank: 3, image: "ww_icons/skill_mat/monumnet_bell.webp"},
@@ -50,6 +59,7 @@ const itemMetadata = {
 "Curse of the Abyss": { group: "cg", category: "weekly", rank: 3, image: "ww_icons/skill_mat/curse_of_the_abyss.webp"},
 
 /*Boss Material*/
+"TBC2": { group: "d", category: "boss", rank: 3, image: "ww_icons/general/tbc2.webp"},
 "Strife Tacet Core": { group: "da", category: "boss", rank: 3, image: "ww_icons/res_mat/strife_tacet_core.webp"},
 "Thundering Tacet Core": { group: "db", category: "boss", rank: 3, image: "ww_icons/res_mat/thundering_tacet_core.webp"},
 "Elegy Tacet Core": { group: "dc", category: "boss", rank: 3, image: "ww_icons/res_mat/elegy_tacet_core.webp"},
@@ -69,6 +79,7 @@ const itemMetadata = {
 "Abyssal Husk": { group: "dq", category: "boss", rank: 3, image: "ww_icons/res_mat/abyssal_husk.webp"},
 
 /*Domain Drops*/
+"TBC3": { group: "e", category: "domain", rank: 0, image: "ww_icons/general/tbc3.webp"},
 "Inert Metallic Drip": { group: "ea", category: "domain", rank: 1, image: "ww_icons/skill_mat/inert_metallic_drip.webp"},
 "Reactive Metallic Drip": { group: "ea", category: "domain", rank: 2, image: "ww_icons/skill_mat/reactive_metallic_drip.webp"},
 "Polarized Metallic Drip": { group: "ea", category: "domain", rank: 3, image: "ww_icons/skill_mat/polarized_metallic_drip.webp"},
@@ -89,8 +100,17 @@ const itemMetadata = {
 "Cadence Bud": { group: "ee", category: "domain", rank: 2, image: "ww_icons/skill_mat/cadence_bud.webp"},
 "Cadence Leaf": { group: "ee", category: "domain", rank: 3, image: "ww_icons/skill_mat/cadence_leaf.webp"},
 "Cadence Blossom": { group: "ee", category: "domain", rank: 4, image: "ww_icons/skill_mat/cadence_blossom.webp"},
+"Incomplete Combustor": { group: "ef", category: "domain", rank: 1, image: "ww_icons/skill_mat/tbc3.webp"},
+"Aftertune Combustor": { group: "ef", category: "domain", rank: 2, image: "ww_icons/skill_mat/tbc3.webp"},
+"Reverberation Combustor": { group: "ef", category: "domain", rank: 3, image: "ww_icons/skill_mat/tbc3.webp"},
+"Remnant Combustor": { group: "ef", category: "domain", rank: 4, image: "ww_icons/skill_mat/tbc3.webp"},
+"LF Carved Crystal": { group: "eg", category: "domain", rank: 1, image: "ww_icons/skill_mat/tbc3.webp"},
+"MF Carved Crystal": { group: "eg", category: "domain", rank: 2, image: "ww_icons/skill_mat/tbc3.webp"},
+"HF Carved Crystal": { group: "eg", category: "domain", rank: 3, image: "ww_icons/skill_mat/tbc3.webp"},
+"FF Carved Crystal": { group: "eg", category: "domain", rank: 4, image: "ww_icons/skill_mat/tbc3.webp"},
 
 /*Flowers*/
+"TBC4": { group: "fa", category: "flower", rank: 0, image: "ww_icons/general/tbc4.webp"},
 "Bamboo Iris": { group: "faa", category: "flower", rank: 0, image: "ww_icons/asc_mat/bamboo_iris.webp"},
 "Belle Poppy": { group: "fab", category: "flower", rank: 0, image: "ww_icons/asc_mat/belle_poppy.webp"},
 "Bloodleaf Viburnum": { group: "fac", category: "flower", rank: 0, image: "ww_icons/asc_mat/bloodleaf_viburnum.webp"},
@@ -112,5 +132,5 @@ const itemMetadata = {
 "Luminous Calendula": { group: "fas", category: "flower", rank: 0, image: "ww_icons/asc_mat/luminous_calendula.webp"},
 "Sliverglow Bloom": { group: "fat", category: "flower", rank: 0, image: "ww_icons/asc_mat/sliverglow_bloom.webp"},
 "Stone Rose": { group: "fau", category: "flower", rank: 0, image: "ww_icons/asc_mat/stone_rose.webp"},
-"Summer Flower": { group: "fav", category: "flower", rank: 0, image: "ww_icons/asc_mat/summer_flower.webp"}
+"Summer Flower": { group: "fav", category: "flower", rank: 0, image: "ww_icons/asc_mat/summer_flower.webp"},
 };
