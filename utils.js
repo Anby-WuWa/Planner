@@ -2959,6 +2959,10 @@ function openInventoryModal() {
 
   Object.keys(itemMetadata).forEach(item => {
   if (item === shellItem) return;
+  if (item === "TBC1") return; 
+  if (item === "TBC2") return; 
+  if (item === "TBC3") return; 
+  if (item === "TBC4") return; 
 
 const category = itemMetadata[item].category;
 
