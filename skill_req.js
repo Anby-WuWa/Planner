@@ -213,11 +213,11 @@ lynae_req: [
 { from: 2, to: 3, items: { 'Shell Credits': 2000, 'Incomplete Combustor': 3, 'LF Exoswarm Core': 3 } },
 { from: 3, to: 4, items: { 'Shell Credits': 4500, 'Aftertune Combustor': 2, 'MF Exoswarm Core': 2 } },
 { from: 4, to: 5, items: { 'Shell Credits': 6000, 'Aftertune Combustor': 3, 'MF Exoswarm Core': 3 } },
-{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Reverberation Combustor': 3, 'HF Exoswarm Core': 2 } },
-{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Reverberation Combustor': 5, 'HF Exoswarm Core': 3, "Dreamless Feather": 1 } },
-{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Remnant Combustor': 2, 'FF Exoswarm Core': 2, "Dreamless Feather": 1 } },
-{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Remnant Combustor': 3, 'FF Exoswarm Core': 3, "Dreamless Feather": 1 } },
-{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Remnant Combustor': 6, 'FF Exoswarm Core': 4, "Dreamless Feather": 1 } }
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Remnant Combustor': 3, 'HF Exoswarm Core': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Remnant Combustor': 5, 'HF Exoswarm Core': 3, "Dreamless Feather": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Reverb Combustor': 2, 'FF Exoswarm Core': 2, "Dreamless Feather": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Reverb Combustor': 3, 'FF Exoswarm Core': 3, "Dreamless Feather": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Reverb Combustor': 6, 'FF Exoswarm Core': 4, "Dreamless Feather": 1 } }
 ],
 mornye_req: [
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'LF Carved Crystal': 2, 'LF Mech Core': 2 } },
