@@ -73,7 +73,7 @@ lupa_req: [
 ],
 lynae_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Aftertune Combustor': 3, 'MF Exoswarm Core': 3, "Dreamless Feather": 1 } },
-{ from: 1, to: 2, items: { 'Shell Credits': 20000, 'Reverberation Combustor': 3, 'HF Exoswarm Core': 3, "Dreamless Feather": 1 } }
+{ from: 1, to: 2, items: { 'Shell Credits': 20000, 'Remnant Combustor': 3, 'HF Exoswarm Core': 3, "Dreamless Feather": 1 } }
 ],
 mornye_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'MF Carved Crystal': 3, 'MF Mech Core': 3, "The Netherworld's Stare": 1 } },
