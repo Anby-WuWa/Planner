@@ -511,7 +511,7 @@ result = {
 																								
 
   let requiredItemsHTML = '<div class="required-items" style="text-align: center; padding: 5px 10px;">';
-  requiredItemsHTML += '<p><strong>Required Items:</strong></p><ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center;">';
+  requiredItemsHTML += '<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center;">';
 
   const sortedItems = Object.entries(totalItems).sort(([a], [b]) => {
     const metaA = itemMetadata[a] ?? {};
@@ -573,7 +573,7 @@ if (requiredExp > 0) {
 
     requiredItemsHTML += `
     <li style="display: inline-block; width: 65px; text-align: center; margin: 5px;"  onclick="openGroupModal('${expGroup}')">
-      <div style="font-size: 12px; background-color: black;">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredExp)}</div>
+      <div class="mobile-text" style="font-size: 12px; background-color: black;">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredExp)}</div>
         <div style="position: relative; display: inline-block; ${bgStyle}">
         <img src="${expIcon}" alt="EXP" style="${imageStyle}">
       </div>			
@@ -607,13 +607,9 @@ if (totalShellCreditRequired > 0) {
 
     requiredItemsHTML += `
     <li style="display: inline-block; width: 65px; text-align: center; margin: 5px; "onclick="openGroupModal('${meta.group}')">
-      <div style="font-size: 12px; background-color: black;">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(totalShellCreditRequired)}</div>
+      <div class="mobile-text" style="font-size: 12px; background-color: black;">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(totalShellCreditRequired)}</div>
         <div style="position: relative; display: inline-block; ${bgStyle}">
         <img src="${iconPath}" alt="Shell Credit"  style="${imageStyle}">
-																		   
-																						  
-																						
-			  
       </div>
     </li>`;
 }
@@ -640,22 +636,15 @@ if (totalShellCreditRequired > 0) {
     const baseColor = rankColors[meta?.rank] ?? '#eee';
     const bgStyle = `border-bottom: 2px solid${baseColor}; background-image: linear-gradient(${baseColor}03 50%, ${baseColor}40 ); padding: 3px; border-radius: 6px;${(!isOff && metQty >= requiredQty) ? ' filter: brightness(50%);' : ''}`;
 
-							  
-																																		 
-
-												 
-				   
-				  
-
     const displayMetQty = isOff ? 0 : metQty;
     const displayCraftedNote = (!isOff && craftedUsed > 0)
-      ? `<div style="position: absolute; bottom: 0; left: 0; background: rgba(0,0,0,0.6); color: white; font-size: 10px; padding: 1px 3px; border-radius: 3px;">${craftedUsed}</div>`
+      ? `<div class="mobile-text" style="position: absolute; bottom: 0; left: 0; background: rgba(0,0,0,0.6); color: white; font-size: 10px; padding: 1px 3px; border-radius: 3px;">${craftedUsed}</div>`
       : '';
     const imageStyle = `width: 55px; height: 55px;${(!isOff && metQty >= requiredQty) ? ' filter: brightness(70%);' : ''}`;
 
     requiredItemsHTML += `
     <li style="display: inline-block; width: 65px; text-align: center; margin: 5px;" onclick="openGroupModal('${meta.group}')">
-      <div style="font-size: 12px; background-color: black;">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredQty)}</div>
+      <div class="mobile-text" style="font-size: 12px; background-color: black;">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredQty)}</div>
         <div style="position: relative; display: inline-block; ${bgStyle}">
         <img src="${iconPath}" alt="${item}" style="${imageStyle}">
 																		 
@@ -765,7 +754,7 @@ if ((totalCharacterExpShortfall > 0 || totalWeaponExpShortfall > 0) && !groupedB
       const bgStyle = `border-bottom: 2px solid #e8d254; background: linear-gradient( #e8d25408 50%, #e8d25420 ); padding: 3px; border-radius: 6px;`;
       summaryHTML += `
         <li style="display: inline-block; width: 60px; text-align: center; margin: 5px;" onclick="openGroupModal('ab')">
-        <div style="font-size: 14px; color: #d5bb88; background-color: black;">${formatNumberShort(totalCharacterExpShortfall)}</div>
+        <div class="mobile-text2" style="font-size: 14px; color: #d5bb88; background-color: black;">${formatNumberShort(totalCharacterExpShortfall)}</div>
           <div style="position: relative; display: inline-block; ${bgStyle}">
             <img src="./ww_icons/general/premium_resonance_potion.webp" alt="EXP" style="width: 50px; height: 50px; border-radius: 4px; color: #d5bb88;">
 									
@@ -778,7 +767,7 @@ if ((totalCharacterExpShortfall > 0 || totalWeaponExpShortfall > 0) && !groupedB
       const bgStyle = `border-bottom: 2px solid #e8d254; background: linear-gradient( #e8d25408 50%, #e8d25420 ); padding: 3px; border-radius: 6px;`;
       summaryHTML += `
         <li style="display: inline-block; width: 60px; text-align: center; margin: 5px;" onclick="openGroupModal('ab')">
-        <div style="font-size: 14px; color: #d5bb88; background-color: black;">${formatNumberShort(totalWeaponExpShortfall)}</div>
+        <div class="mobile-text2" style="font-size: 14px; color: #d5bb88; background-color: black;">${formatNumberShort(totalWeaponExpShortfall)}</div>
           <div style="position: relative; display: inline-block; ${bgStyle}">
             <img src="./ww_icons/general/Premium_Energy_Core.png" alt="EXP" style="width: 50px; height: 50px; border-radius: 4px; color: #d5bb88;">
 																		  
@@ -800,7 +789,7 @@ if ((totalCharacterExpShortfall > 0 || totalWeaponExpShortfall > 0) && !groupedB
 
       summaryHTML += `
            <li style="display: inline-block; width: 60px; text-align: center; margin: 5px;" onclick="openGroupModal('${meta.group}')">
-          <div style="font-size: 14px; color: #d5bb88; background-color: black;">${formatNumberShort(qty)}</div>
+          <div class="mobile-text2" style="font-size: 14px; color: #d5bb88; background-color: black;">${formatNumberShort(qty)}</div>
            <div style="position: relative; display: inline-block; ${bgStyle}">
             <img src="${icon}" alt="${item}" style="width: 50px; height: 50px; border-radius: 4px; color: #d5bb88;">
           </div>
@@ -1246,7 +1235,7 @@ if (requiredExp > 0) {
     breakdownHTML += `
       <li style="display: inline-block; width: 65px; text-align: center; margin: 5px;" onclick="openGroupModal('${expGroup}')">
       
-                <div style="font-size: 12px; background-color: black; color: ${metExp >= requiredExp ? 'green' : 'red'};">${formatNumberShort(qty)}</div>
+                <div class="mobile-text" style="font-size: 12px; background-color: black; color: ${metExp >= requiredExp ? 'green' : 'red'};">${formatNumberShort(qty)}</div>
 				
 			  
          <div style="position: relative; display: inline-block;  ${bgStyle}; ">
@@ -1285,10 +1274,10 @@ for (const [item, requiredQty] of sortedItems) {
 
     breakdownHTML += `
       <li style="display: inline-block; width: 65px; text-align: center; margin: 5px;" onclick="openGroupModal('${meta.group}')">
-        <div style="font-size: 12px; background-color: black; color: ${metQty >= requiredQty ? 'green' : 'red'};">${formatNumberShort(metQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredQty)}</div>
+        <div class="mobile-text"  style="font-size: 12px; background-color: black; color: ${metQty >= requiredQty ? 'green' : 'red'};">${formatNumberShort(metQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredQty)}</div>
         <div style="position: relative; display: inline-block;  ${bgStyle}; ">
           <img src="${iconPath}" alt="${item}" style="${imageStyle}">
-          ${showCrafted ? `<div style="position: absolute; bottom: 0; left: 0; background: rgba(0,0,0,0.6); color: white; font-size: 10px; padding: 1px 3px; border-radius: 3px;">${craftedUsed}</div>` : ''}
+          ${showCrafted ? `<div class="mobile-text" style="position: absolute; bottom: 0; left: 0; background: rgba(0,0,0,0.6); color: white; font-size: 10px; padding: 1px 3px; border-radius: 3px;">${craftedUsed}</div>` : ''}
         </div>
       </li>`;
 
@@ -1324,7 +1313,7 @@ for (const [item, requiredQty] of sortedItems) {
     const bgStyle = `border-bottom: 2px solid${bgColor}; background: linear-gradient(${bgColor}01 50%, ${bgColor}10 ); padding: 4px; border-radius: 6px;`;
     message += `
       <li style="display: inline-block; width: 60px; text-align: center; margin: 5px;" onclick="openGroupModal('${meta.group}')">
-        <div style="font-size: 12px;color: #d5bb88; background-color: black;">${qty} </div>
+        <div class="mobile-text2" style="font-size: 14px; color: #d5bb88; background-color: black;">${qty} </div>
         <div style="position: relative; display: inline-block; ${bgStyle}">
           <img src="${iconPath}" alt="${item}" style="width: 50px; height: 50px; border-radius: 4px;">
         </div>
@@ -2239,7 +2228,7 @@ if (!isWeapon) {
   };
 }
   const baseColor = rankColors[data.rank] ?? '#eee';
-  const bgStyle = `background: linear-gradient(${baseColor}08 50%, ${baseColor}80 ); border-Bottom: 3px solid ${baseColor};`;
+  const bgStyle = `background: linear-gradient(${baseColor}08 50%, ${baseColor}80 ); border-Bottom: 3px solid ${baseColor};`
 
   let requiredItemsHTML = '<div class="required-items" style="text-align: center; padding: 5px 10px;">';
 		
@@ -2277,7 +2266,7 @@ if (!isWeapon) {
     <div style="display: flex; flex-direction: row; gap: 20px; align-items: flex-start; ">
       <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height:170px  ">
         <p><strong>Level:</strong> ${currentLevel} → ${desiredLevel}</p>
-        <img src="${data.image}" alt="${name}" style="${bgStyle}; width: 100px; height: 100px; border-radius: 6px; object-fit: cover; margin-top: 5px;">
+        <img src="${data.image}" alt="${name}" style="${bgStyle}; width: 120px; height: 120px; border-radius: 6px; object-fit: cover; margin-top: 5px;">
       </div>
 														
       <div>
@@ -2292,7 +2281,7 @@ if (!isWeapon) {
       <div style="display: flex; flex-direction: row; gap: 20px; align-items: flex-start; justify-content: center; ">
       <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height:170px  ">
         <p><strong>Level:</strong> ${currentLevel} → ${desiredLevel}</p>
-    <img src="${data.image}" alt="${name}" style=" ${bgStyle} width: 100px; height: 100px; border-radius: 6px; object-fit: cover;">
+    <img src="${data.image}" alt="${name}" style=" ${bgStyle} width: 120px; height: 120px; border-radius: 6px; object-fit: cover;">
     <div>
     </div>
   </div>
