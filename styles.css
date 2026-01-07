@@ -79,7 +79,7 @@
 
       .right-half .character-card {
       font-size: 1.07rem;
-      height: 625px;
+      height: 635px;
       width: 460px;
     }
 
@@ -101,7 +101,7 @@
       border-radius: 8px;
       color: #d5bb88;
       width: 430px;
-      height: 620px;
+      height: 600px;
       box-shadow: 1px 0px 5px #d5bb88;
       overflow: hidden;
       font-size: 16px;
@@ -863,5 +863,6 @@
     position: relative;
     text-align: center;
 }
+
 
 
