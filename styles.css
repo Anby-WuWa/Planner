@@ -118,7 +118,7 @@
       box-shadow: 1px 0px 5px #d5bb88;
       color: #d5bb88;
       height: 40px;
-      font-size: 25px;
+      font-size: 19px;
       padding: 5px 10px;
       border-radius: 8px 8px 20px 0;
       font-weight: bold;
@@ -863,4 +863,5 @@
     position: relative;
     text-align: center;
 }
+
 
