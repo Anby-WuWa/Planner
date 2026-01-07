@@ -101,7 +101,7 @@
       border-radius: 8px;
       color: #d5bb88;
       width: 430px;
-      height: 600px;
+      height: 610px;
       box-shadow: 1px 0px 5px #d5bb88;
       overflow: hidden;
       font-size: 16px;
@@ -863,3 +863,4 @@
     position: relative;
     text-align: center;
 }
+
